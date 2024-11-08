@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="{% static 'testapp/css/bootstrap.css' %}">
+</head>
+<body>
+    <div class="container mt-3">
+        <h2 class="text-center alert alert-danger">Function Based View</h2>
+        {% block content %} {% endblock content %}
+        <script src="{% static 'testapp/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'testapp/js/jquery.js' %}"></script>
+        <script src="{% static 'testapp/js/popper.js' %}"></script>
+    </div>
+</body>
+</html>
